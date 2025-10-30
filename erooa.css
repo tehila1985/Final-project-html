@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+.s{
+    height: 10vh;
+}
+.shita{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('תמונות/חווה ואש.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1; 
+    animation: backgroundZoom 10s infinite alternate;
+}  
+.content {
+    width: 100vw;
+    flex-grow: 1;
+}
+
+
+.ll{
+    background-color:  rgba(255, 255, 255, 0.712);
+}
+.image-container {
+    animation: none;
+}
+.chavaya {
+    color: white;
+    background-color:  rgba(95, 160, 160, 0.479);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 5vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 45vh; 
+    text-align: center;
+    width:50vw;
+    left:25vw;
+    z-index: 1;
+    animation: zoomInOut 5s ease-in-out infinite;
+    
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1) translateZ(0); 
+    }
+    50% {
+        transform: scale(1.1) translateZ(-300px); 
+    }
+    100% {
+        transform: scale(1) translateZ(0); 
+    }
+}
+
+.top {
+    height: 10vh;
+    background-color: rgb(104, 160, 160);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    top: 0vh;
+    direction: rtl;
+    z-index: 9999;
+}
+
+.tafrit {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* padding: 2vh; */
+    align-content: center;
+    
+}
+
+.tafrit a {
+    text-decoration: none;
+    font-size: smaller;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+   
+} 
+
+
+
+.tafritt {
+    height: 10vh;
+    padding: 2vh;
+    align-content: center;
+    text-align: center;
+
+
+}
+.tafritt .e{
+    position: relative;
+}
+ ol {
+    list-style-type: none;
+    position: absolute;
+    top:10vh;
+    z-index: 10;
+    display: none;
+}
+ol li{
+    background-color: rgb(104, 160, 160);;
+    padding: 3vh;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1px;
+    
+}
+.top .tafrit :hover ol {
+    display: block ;
+}
+.logo {
+    font-size: 4vh;
+    align-content: center;
+    padding-right: 4vw;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 10vh;
+}
+
+.tafritt :hover {
+    background-color: rgba(216, 232, 232, 0.192);
+
+}
+h1{
+    align-content: center;
+    text-align: center;
+    height: 10vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+}
+.rrrr{
+    width:100vw; 
+    text-align: center;
+    align-content: center;
+    height: 5vh;
+    padding: 5vh; 
+    display: flex;
+    justify-content: center;
+    
+    }
+h2{ 
+    color:  rgb(4, 112, 89);
+    border: solid 0.002vw;
+    animation: big 10s infinite alternate;
+    text-align: center;
+    width: 25vw;
+}
+
+h3{
+    align-content: center;
+    text-align: center;
+    height: 10vh;
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+}
+p{
+    align-content: center;
+    text-align: center;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 75, 60);
+    margin-right: 30vw;
+    margin-left: 30vw;
+    justify-content: center;
+    
+}
+.igool{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    padding-top: 5vh;
+}
+.shalav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tmoon{
+    width: 40vw;
+    border-radius: 50vb;
+    animation: zoomInOut 5s ease-in-out infinite;
+    transform-origin: center; 
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1) translateZ(0); 
+    }
+    50% {
+        transform: scale(1.1) translateZ(-300px); 
+    }
+    100% {
+        transform: scale(1) translateZ(0); 
+    }
+}
+
+.coteret{
+    align-content: center;
+    text-align: center;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(104, 160, 160);
+    padding:5vw;
+}
+h5{
+    text-align: center;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(104, 160, 160);
+    margin-top:3vw;
+    margin-right:3vw;
+    margin-left:3vw;
+}
+.ciyoov{
+    text-align: center;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(104, 160, 160);
+    margin-top:3vw;
+    margin-right:5vw;
+    margin-left:5vw;
+}
+
+footer {
+    background-color: black;
+    font-size: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+    text-align: center;
+    align-content: center;
+    padding: 2vh;
+    width: 100vw;
+    text-wrap: wrap;
+    position: fixed;
+    bottom: 0vh;
+    direction: rtl;
+}
+@media (max-width: 480px) {
+    .logo {
+        font-size: 2vh;
+    }   
+ .igool{
+       display: flex;
+       flex-direction: column;
+       padding-top: 5vh;
+    }
+    .image-container {
+        animation: none;
+    }
+    .chavaya {
+        animation: zoomInOut 5s ease-in-out infinite;
+    }
+    p{  
+        padding:5vw; 
+        margin: 0;
+    }
+   
+}
+
+@media (max-width: 1024px) and (max-width: 1024px) {
+    .logo {
+        font-size: 2vh;
+    }   
+    .igool{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5vh;
+        height: auto;
+     }
+     .shalav{
+        margin: 7vh;
+
+     }
+     .tmoon{
+        width: 60vw;
+     }
+     .image-container {
+     animation: none;
+    }
+    .chavaya {
+        animation: zoomInOut 5s ease-in-out infinite; 
+    }
+    p{  
+        padding:5vw; 
+        margin: 0;
+    }
+}
+
+h1  a:hover{
+    color:rgb(17, 97, 154);
+    font-size: larger;
+}
+h1  a{
+    font-size: smaller;
+    color: rgb(18, 103, 56);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+@media (max-width:1400px) {
+    .image-container {
+        animation: none;
+    }
+    .chavaya {
+        animation: zoomInOut 5s ease-in-out infinite;
+    } .logo {
+        font-size: 2vh;
+    }        
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1) translateZ(0); 
+    }
+    50% {
+        transform: scale(1.1) translateZ(-300px); 
+    }
+    100% {
+        transform: scale(1) translateZ(0); 
+    }
+}

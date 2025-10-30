@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.top {
+    height: 10vh;
+    background-color: rgb(104, 160, 160);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    top: 0vh;
+    z-index: 999;
+}
+
+.tafrit {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* padding: 2vh; */
+    align-content: center;
+    
+}
+
+.tafrit a {
+    text-decoration: none;
+    font-size: smaller;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+   
+} 
+
+.tafritt {
+    height: 10vh;
+    padding: 2vh;
+    align-content: center;
+    text-align: center;
+
+
+}
+.tafritt .e{
+    position: relative;
+}
+ ol {
+    list-style-type: none;
+    position: absolute;
+    top:10vh;
+    z-index: 10;
+    display: none;
+}
+ol li{
+    background-color: rgb(104, 160, 160);;
+    padding: 3vh;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1px;
+    
+}
+.top .tafrit :hover ol {
+    display: block ;
+}
+.logo {
+    font-size: 4vh;
+    align-content: center;
+    padding-right: 4vw;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 10vh;
+}
+
+.tafritt :hover {
+    background-color: rgba(216, 232, 232, 0.192);
+
+}
+.dadiImg {
+    /* position: relative; */
+    background-image: url('./תמונות/94e7e5c027ef1003bcf274a7e0e925fd22.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+}
+
+
+.taitle {
+    background-color: rgba(95, 160, 160, 0.479);
+    color: white;
+    border-radius: 15px;
+    z-index: 1;
+    font-size: 3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    padding: 20px;
+    top: 35vh;
+    text-align: center;
+    width: 50vw;
+    left: 25vw;
+
+    animation: zoomInOut 5s ease-in-out infinite;
+    
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1) translateZ(0); 
+    }
+    50% {
+        transform: scale(1.1) translateZ(-300px); 
+    }
+    100% {
+        transform: scale(1) translateZ(0); 
+    }
+}
+
+.cotiner {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+}
+.content {
+    width: 100vw;
+    background-color:  rgba(255, 255, 255, 0.712);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    height: 15vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+    text-align: center;
+    align-content: center;
+    text-wrap: wrap;
+    padding: 2vh;
+
+
+}
+h2{
+    height: 15vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+    text-align: center;
+    align-content: center;
+    text-wrap: wrap;
+    padding: 2vh;
+
+}
+h3{
+    height: 9.5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+    text-align: center;
+    align-content: center;
+    text-wrap: wrap;
+    padding: 2vh;
+}
+
+
+
+hr {
+    border: none;
+    border-top: 3px solid rgb(4, 112, 89);
+    margin: 2vh auto;
+    width: 20vw;
+
+}
+.advertising{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text{
+    width: 55vw;
+    padding: 2vh;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+    margin: 2vh;
+}
+.image{
+    margin: 2vh;
+    width: 35vw;
+    animation-name: changeBackground; 
+    animation-duration: 12s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: steps(1); 
+    background-size: cover; 
+}
+
+@keyframes changeBackground {
+    0% {
+      background-image: url('./תמונות/4a2a03c7435ca7aa0c8c827050ceda32.jpg');
+    }
+    20% {
+      background-image: url('./תמונות/817435b7fd75bc9d538088f01c3d5f6c.jpg');
+    }
+    40% {
+      background-image: url('./תמונות/אודות-חוות-קאסה-דל-סול.bf65e1.webp');
+    }
+    60% {
+        background-image: url('./תמונות/עבודה-עם-סוסים.b197b0.webp');
+      }
+    80% {
+        background-image: url('./תמונות/רכיבה-טיפולית-1.bf65e1.webp');
+    }
+    100% {
+      background-image: url('./תמונות/4a2a03c7435ca7aa0c8c827050ceda32.jpg'); /* חזרה לתמונה הראשונה כדי ליצור לולאה */
+    }
+  }
+  .message{
+    padding: 3vh;
+    height: 20vh;
+    width: 45vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0.1vh solid black;
+    text-align: center;
+    align-content: center;
+    margin: 4vh;
+
+  }
+.TravelPackages{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.Packages{
+    width: 31vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2vh;
+    background-color: white;
+    border-radius: 2vh;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    overflow: hidden;
+
+}
+button{
+    text-align: center;
+    align-content: center;
+    color: white;
+    background-color: rgb(4, 112, 89);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+    padding: 2vh;
+}
+.img{
+    width: 31vw;
+    height:60vh;
+    background-image: url('./תמונות/romantic-ride_800x600.jpg');
+    background-position: center;
+    margin: 0 auto;
+    display: block;
+    background-size: cover;
+  }
+ .bb{
+    text-align: center;
+    align-content: center;
+    color: white;
+    background-color: rgb(4, 112, 89);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+    padding: 2vh;
+    text-decoration: none;
+ }
+  .Packages:nth-child(1) .img {
+    background-image: url('./תמונות/החוויה-המושלמת-חבילת-חורף-e1580309520428.jpeg');
+  }
+  .Packages:nth-child(2) .img {
+
+    background-image: url('./תמונות/romantic-ride_800x600.jpg');
+  }
+  .Packages:nth-child(3) .img {
+
+    background-image: url('תמונות/38-3088-21.jpg');
+  }
+  .Packages:nth-child(4) .img {
+
+    background-image: url('תמונות/pe18-zoya_stas-korinsky-678x381.webp');
+  }
+  .Packages:nth-child(5) .img {
+
+    background-image: url('./תמונות/5.jpg');
+  }
+  .Packages:nth-child(6) .img {
+
+    background-image: url('./תמונות/2.jpg');
+  }
+ 
+ p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+    text-align: center;
+    align-content: center;
+    text-wrap: wrap;
+    padding: 2vh;
+
+ }
+ .information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+
+  
+
+footer {
+    background-color: black;
+    font-size: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+    text-align: center;
+    align-content: center;
+    padding: 2vh;
+    width: 100vw;
+    text-wrap: wrap;
+    position: fixed;
+    bottom: 0vh;
+}
+.s{
+    height: 10vh;
+}
+@media (max-width: 960px)  {
+    .Packages{
+        width: 46vw;
+    }
+    .img{
+        width: 46vw;
+    
+      }
+      .advertising{
+        /* height: 40vh; */
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .text{
+        width: 90vw;
+    }
+    .image{
+        width: 90vw;
+        height: 50vh;
+    }
+    ol {
+        right:40.5vw ;
+    }
+    .logo {
+        font-size: 2vh;
+    }
+   
+}
+@media (max-width: 577px) {
+    .Packages{
+        width: 90vw;
+    }
+    .img{
+        width: 90vw;
+      }
+      .advertising{
+        /* height: 40vh; */
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .text{
+        width: 90vw;
+    }
+    .image{
+        width: 90vw;
+        height: 50vh;
+    }
+    ol {
+        top:10vh;
+    }
+    .logo {
+        font-size: 2vh;
+    }
+     
+}
+
+
+
+
+
+

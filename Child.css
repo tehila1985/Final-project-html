@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+.top {
+    height: 10vh;
+    background-color: rgb(104, 160, 160);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    top: 0vh;
+    direction: rtl;
+    z-index: 999;
+}
+
+.tafrit {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* padding: 2vh; */
+    align-content: center;
+    
+}
+
+.tafrit a {
+    text-decoration: none;
+    font-size: smaller;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+   
+} 
+
+.tafritt {
+    height: 10vh;
+    padding: 2vh;
+    align-content: center;
+    text-align: center;
+
+
+}
+.tafritt .e{
+    position: relative;
+}
+ ol {
+    list-style-type: none;
+    position: absolute;
+    top:10vh;
+    z-index: 10;
+    display: none;
+}
+ol li{
+    background-color: rgb(104, 160, 160);;
+    padding: 3vh;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1px;
+    
+}
+.top .tafrit :hover ol {
+    display: block ;
+}
+.logo {
+    font-size: 4vh;
+    align-content: center;
+    padding-right: 4vw;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 10vh;
+}
+
+.tafritt :hover {
+    background-color: rgba(216, 232, 232, 0.192);
+
+}
+.image-container {
+    background-image: url('תמונות/ילדה צנועה.jpg');
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    animation: backgroundZoom 10s infinite alternate;
+    position: fixed;
+    top:0;
+    z-index: -1;
+}
+
+@keyframes backgroundZoom {
+    0% {
+        background-size: 105%;
+    }
+    50% {
+        background-size: 120%;
+    }
+    100% {
+        background-size: 105%;
+    }
+}
+@media (max-width:1400px) {
+        .image-container {
+            animation: none;
+        }
+        .chavaya {
+            animation: zoomInOut 5s ease-in-out infinite;
+        }      
+    }
+    
+    @keyframes zoomInOut {
+        0% {
+            transform: scale(1) translateZ(0); 
+        }
+        50% {
+            transform: scale(1.1) translateZ(-300px); 
+        }
+        100% {
+            transform: scale(1) translateZ(0); 
+        }
+    }
+    
+.chavaya {
+    color: white;
+    background-color:  rgba(95, 160, 160, 0.479);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 5vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: zoomInOut 5s ease-in-out infinite;
+    margin: auto;
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1) translateZ(0); 
+    }
+    50% {
+        transform: scale(1.1) translateZ(-300px); 
+    }
+    100% {
+        transform: scale(1) translateZ(0); 
+    }
+}
+.shita{
+    height: 100vh;
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    width: 100vw;
+    flex-grow: 1;
+}
+
+
+
+
+h1{
+    align-content: center;
+    text-align: center;
+    height: 10vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+}
+.rrrr{
+    width:100vw; 
+    text-align: center;
+    align-content: center;
+    height: 5vh;
+    padding: 5vh;
+    }
+h2{ 
+    text-align: center;
+    width:30vw;
+    color:  rgb(4, 112, 89);
+    border: solid 0.002px;
+    margin:auto;
+}
+h3{
+    align-content: center;
+    text-align: center;
+    height: 10vh;
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+}
+p{
+    align-content: center;
+    text-align: center;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(7, 72, 58);
+    margin-right: 20vw;
+    margin-left: 20vw;
+}
+.igool{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 5vh;
+   padding-bottom: 5vw;
+}
+.shalav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tmoon{
+    width: 28vw;
+    border-radius: 50vb;
+    animation: zoomInOut 5s ease-in-out infinite; 
+    transform-origin: center; 
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1) translateZ(0); 
+    }
+    50% {
+        transform: scale(1.1) translateZ(-300px); 
+    }
+    100% {
+        transform: scale(1) translateZ(0); 
+    }
+}
+
+.coteret{
+    align-content: center;
+    text-align: center;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(3, 53, 42);
+    padding:5vw;
+}
+h5{
+    text-align: center;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(5, 68, 55);
+    margin-top:3vw;
+    margin-right:3vw;
+    margin-left:3vw;
+}
+.ciyoov{
+    text-align: center;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(3, 85, 68);
+    margin-top:3vw;
+    margin-right:5vw;
+    margin-left:5vw;
+}
+
+footer {
+    background-color: black;
+    font-size: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 112, 89);
+    text-align: center;
+    align-content: center;
+    padding: 2vh;
+    width: 100vw;
+    text-wrap: wrap;
+    position: fixed;
+    bottom: 0vh;
+    direction: rtl;
+}
+.s{
+    height: 10vh;
+}
+@media (max-width: 480px) {
+    
+ .igool{
+       display: flex;
+       flex-direction: column;
+       padding-top: 5vh;
+    }
+    .image-container {
+        animation: none;
+    }
+    .chavaya {
+        animation: zoomInOut 5s ease-in-out infinite; 
+    }
+    p{  
+        padding:5vw; 
+        margin: 0;
+    }
+    .logo {
+        font-size: 2vh;
+    }
+}
+.chavaya {
+    animation: zoomInOut 5s ease-in-out infinite;
+}
+
+@media (max-width: 1024px) and (max-width: 1024px) {
+    .logo {
+        font-size: 2vh;
+    }
+    .igool{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5vh;
+     }
+     .shalav{
+        margin: 7vh;
+       
+
+     }
+     .tmoon{
+        width: 60vw;
+     }
+     .image-container {
+     animation: none;
+    }
+    .chavaya {
+        animation: zoomInOut 5s ease-in-out infinite; 
+    }
+    p{  
+        padding:5vw; 
+        margin: 0;
+    }
+   
+}
+.image-container {
+    animation: none;
+   }
+h5:hover{
+    color: rgb(18, 103, 56);
+    font-size: larger;
+}
+.ll{
+    background-color:  rgba(255, 255, 255, 0.712);
+}
+@media (max-width:1500px) {
+    .image-container {
+        animation: none;
+    }
+    .chavaya {
+        animation: zoomInOut 5s ease-in-out infinite;
+    }  .logo {
+        font-size: 2vh;
+    }     
+}
+
+
+
